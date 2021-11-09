@@ -330,10 +330,14 @@ body {
         font-family: atifont;
     }
 
+    li {
+        padding: 0px 0px 10px 0px;
+    }
 
     .footer_link {
         text-decoration: none;
         font-family: atifont;
+        color: snow;
         &:visited, &:hover, &:active {
             color: snow;
         }
