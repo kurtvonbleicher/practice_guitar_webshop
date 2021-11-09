@@ -304,8 +304,39 @@ body {
     }
 }
 
+/* footer + elektro-akusztikus gitároldal*/
+
+
+.main {
+    overflow: auto;
+}
+
 .footer_container {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
+    background-color: rgb(25, 25, 25);
+    text-align: left;
+    color: snow;
+
+    h4 {
+        font-size: 14pt;
+    }
+
+    .footer_box {
+        padding: 10px;
+        width: 18%;
+        list-style: none;
+        font-family: atifont;
+    }
+
+
+    .footer_link {
+        text-decoration: none;
+        font-family: atifont;
+        &:visited, &:hover, &:active {
+            color: snow;
+        }
+
+    }
 }
