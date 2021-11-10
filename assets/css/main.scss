@@ -318,6 +318,11 @@ body {
     background-color: rgb(25, 25, 25);
     text-align: left;
     color: snow;
+    transition: 400ms;
+
+    &:hover {
+        background-color: rgb(40, 40, 40);
+    }
 
     h4 {
         font-size: 14pt;
@@ -341,6 +346,5 @@ body {
         &:visited, &:hover, &:active {
             color: snow;
         }
-
     }
 }
