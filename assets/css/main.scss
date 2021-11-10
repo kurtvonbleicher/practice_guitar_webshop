@@ -346,5 +346,39 @@ body {
         &:visited, &:hover, &:active {
             color: snow;
         }
+        &:hover {
+            color:gray;
+        }
+    }
+}
+
+/*vintage page */
+
+.vintage_container {
+    width: 100%;
+    transition: 400ms;
+    display: flex;
+    justify-content: left;
+
+    &:hover {
+        background-color: rgb(40, 40, 40);
+    }
+
+    .vintage_img {
+        width: 420px;
+    }
+}
+
+.vintage_textbox {
+    text-align: left;
+    padding: 5%;
+
+    p {
+        text-align: left;
+    }
+
+    h3 {
+        font-family: atifont;
+        color: snow;
     }
 }
