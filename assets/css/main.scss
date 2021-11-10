@@ -346,5 +346,8 @@ body {
         &:visited, &:hover, &:active {
             color: snow;
         }
+        &:hover {
+            color:gray;
+        }
     }
 }
