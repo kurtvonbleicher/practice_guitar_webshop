@@ -162,7 +162,6 @@ body {
     height: 255.6px;
     width: 384px;
     display: block;
-    float: left;
     background-color: black;
     position: relative;
     cursor: pointer;
@@ -247,6 +246,7 @@ body {
 
 .invisible_link {
     text-decoration: none;
+    display: inline-block;
 }
 
 .shop_invisible_link {
@@ -308,7 +308,8 @@ body {
 
 
 .main {
-    overflow: auto;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .footer_container {
