@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <div class="loader"></div>
     <div class="navbar">
         <img src="assets/images/logo.png" alt="Ati Guitars">
         <button class="menubutton"><a href="index.html">Kezdőlap</a></button>
@@ -36,6 +35,7 @@
         <button class="menubutton"><a href="contact.html">Kapcsolat</a></button>
         <button class="menubutton"><a href="about.html">Rólunk</a></button>
     </div>
+    <div class="loader"></div>
     <h2>Atcsy Web-Gitárbóltya</h2>
     <p>Az innováció a jelszavunk, az Ati gitárok a családunk</p>
     <br>
@@ -98,6 +98,33 @@
             <li><a class="footer_link" href="about.html" alt="Rólunk">Rólunk</a></li>
         </ul>
     </footer>
+
+    <script>
+        const loaderSpinner = document.getElementsByClassName("loader")[0];
+        console.log(loaderSpinner);
+
+        const fadeoutLoader = () => {
+            loaderSpinner.style.opacity = 0
+        }
+
+        const showLoader = () => {
+            loaderSpinner.style.opacity = 1
+        }
+
+        const hideLoader = () => {
+            fadeoutLoader();
+
+            setTimeout(() => {
+                loaderSpinner.style.display = "none"
+                showloader();
+            }, 2000)
+        }
+
+        setTimeout(() => {
+            hideLoader()
+        }, 0);
+
+    </script>
 
 </body>
 

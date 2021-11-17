@@ -402,6 +402,9 @@ body {
     animation: spin 2s linear infinite;
     justify-content: center;
     display: inline-block;
+    transition: 1s;
+    transition-delay: 1s;
+    opacity: 1;
 }
 
 
