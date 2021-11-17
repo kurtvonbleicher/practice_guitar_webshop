@@ -36,10 +36,11 @@
         <button class="menubutton"><a href="about.html">Rólunk</a></button>
     </div>
     <div class="loader"></div>
-    <h2>Atcsy Web-Gitárbóltya</h2>
-    <p>Az innováció a jelszavunk, az Ati gitárok a családunk</p>
-    <br>
-    <main class="main">
+
+    <main class="main" style="display: none;">
+        <h2>Atcsy Web-Gitárbóltya</h2>
+        <p>Az innováció a jelszavunk, az Ati gitárok a családunk</p>
+        <br>
         <a class="invisible_link" href="news_1.html">
             <div class="newsbutton_container">
                 <img src="assets/images/news_1.jpg" alt="Ez egy menő gitár">
@@ -98,34 +99,7 @@
             <li><a class="footer_link" href="about.html" alt="Rólunk">Rólunk</a></li>
         </ul>
     </footer>
-
-    <script>
-        const loaderSpinner = document.getElementsByClassName("loader")[0];
-        console.log(loaderSpinner);
-
-        const fadeoutLoader = () => {
-            loaderSpinner.style.opacity = 0
-        }
-
-        const showLoader = () => {
-            loaderSpinner.style.opacity = 1
-        }
-
-        const hideLoader = () => {
-            fadeoutLoader();
-
-            setTimeout(() => {
-                loaderSpinner.style.display = "none"
-                showloader();
-            }, 2000)
-        }
-
-        setTimeout(() => {
-            hideLoader()
-        }, 0);
-
-    </script>
-
+    <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
