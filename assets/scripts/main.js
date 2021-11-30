@@ -14,7 +14,7 @@ const hideLoader = () => {
     loaderSpinner.style.display = "none"
     mainContainer.style.display = "block"
     setLoaderOpacity(1);
-  }, 2000)
+  }, 0000)
 }
 
 hideLoader()

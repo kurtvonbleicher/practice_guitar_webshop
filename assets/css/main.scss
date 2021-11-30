@@ -142,22 +142,6 @@ body {
     }
 }
 
-@media (max-width: 640px) {
-    .left_aligned, .right_aligned {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 24px;
-    }
-
-    .left_aligned span, .right_aligned span {
-        text-align: center;
-    }
-
-    .navbar {
-        display: none;
-    }
-}
-
 .newsbutton_container {
     height: 255.6px;
     width: 384px;
@@ -165,7 +149,6 @@ body {
     background-color: black;
     position: relative;
     cursor: pointer;
-    margin: 20px;
 
     &:hover .news_text {
         background-color: snow;
@@ -191,9 +174,10 @@ body {
 
     > img {
         transition: 0.3s;
-        opacity: 0.7;
+        opacity: 0.7;      
         height: 255.6px;
         width: 384px;
+        
     }
 
     &:hover > img {
@@ -247,6 +231,7 @@ body {
 .invisible_link {
     text-decoration: none;
     display: inline-block;
+    margin: 20px;
 }
 
 .shop_invisible_link {
@@ -416,4 +401,42 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/*mobilnézet 11.29-31*/
+
+@media (max-width: 600px) {
+    .left_aligned, .right_aligned {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .left_aligned span, .right_aligned span {
+        text-align: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .footer_container {
+        display: none;
+    }
+
+    .invisible_link {
+        width: 80%;
+        .newsbutton_container {
+            width: auto;            
+            object-fit: cover;
+
+            img {
+                width:-webkit-fill-available;
+                object-fit: cover;
+            }
+        }
+    }
+    .body {
+        display: inline;
+    }
 }
