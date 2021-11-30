@@ -425,6 +425,18 @@ body {
     }
 
     .invisible_link {
-        width: max-content;
+        width: 80%;
+        .newsbutton_container {
+            width: auto;            
+            object-fit: cover;
+
+            img {
+                width:-webkit-fill-available;
+                object-fit: cover;
+            }
+        }
+    }
+    .body {
+        display: inline;
     }
 }
