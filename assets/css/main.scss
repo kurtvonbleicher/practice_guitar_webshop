@@ -345,6 +345,7 @@ body {
     transition: 400ms;
     display: flex;
     justify-content: left;
+    user-select: none;
 
     &:hover {
         background-color: rgb(40, 40, 40);
