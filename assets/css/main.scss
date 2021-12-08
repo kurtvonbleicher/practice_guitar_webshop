@@ -439,4 +439,19 @@ body {
     .body {
         display: inline;
     }
+    .vintage_container {
+        display: inline;
+        .vintage_img {
+            width:-webkit-fill-available;
+        }
+    }
+
+    .item_box:hover {
+
+        .item_details_box {
+            display: block;
+            z-index: 2;
+            position: absolute;
+        }
+    }
 }
