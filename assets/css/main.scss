@@ -97,7 +97,7 @@ body {
         .dropdown_container {
             opacity: 1;
             transition: 0.3s;
-            height: 100px;
+            height: fit-content;
             margin: 0;
         }
 
@@ -393,6 +393,11 @@ body {
 }
 
 
+.mobile_menu {
+    display: none;
+}
+
+
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -452,6 +457,44 @@ body {
             display: block;
             z-index: 2;
             position: absolute;
+        }
+    }
+
+    /*mobilnézet menü*/
+
+    .mobile_menu {
+        width: 35px;
+        height: 27px;
+        display: block;
+
+        .mobile_dropdown_container {
+            display: none;
+        }
+        .mobile_menu_element {
+            width: 35px;
+            height: 5px;
+            background-color: snow;
+            margin: 6px 0;
+        }
+        &:hover {
+
+            .mobile_dropdown_container {
+                display: inline-block;
+                position: relative;
+                z-index: 10;
+                margin: none;
+                text-align: left;
+
+                .mobile_dropdown_item {
+                    width: 200px;
+                    justify-content: flex-start;
+                    background-color: snow;
+                    list-style: none;
+                    a {                        
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
 }
