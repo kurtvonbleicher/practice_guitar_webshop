@@ -97,7 +97,7 @@ body {
         .dropdown_container {
             opacity: 1;
             transition: 0.3s;
-            height: fit-content;
+            height: 100px;
             margin: 0;
         }
 
@@ -345,7 +345,6 @@ body {
     transition: 400ms;
     display: flex;
     justify-content: left;
-    user-select: none;
 
     &:hover {
         background-color: rgb(40, 40, 40);
@@ -378,6 +377,7 @@ body {
 
 /* loader, 11.17 */ 
 
+
 .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
@@ -392,55 +392,6 @@ body {
     opacity: 1;
 }
 
-.mobile_menu {
-    display: none;
-
-    .mobile_hamburger {
-        background-color: snow;
-        border-radius: 2px;
-    }
-
-    &:hover {
-
-        .mobile_dropdown_container {
-            display: inline-block;
-            position: absolute;
-            background-color: snow;
-            z-index: 10;
-            margin: 0px;
-            text-align: left;
-            padding: 12px;
-            left: 35px;
-            flex: 1;
-            font-family: Atifont;                
-
-            .mobile_dropdown_item {
-                justify-content: flex-start;
-                list-style: none;
-                margin: 8px;
-                a {                        
-                    text-decoration: none;
-                    color:rgb(25, 25, 25);
-                }
-            }
-        }
-
-        .mobile_arrow_container {
-                &:hover {                  
-                    .mobile_arrow_ul {
-                        position: relative;
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-.mobile_dropdown_container {
-    display: none;
-}
-.mobile_arrow_ul {
-    display: none;
-}
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -485,29 +436,32 @@ body {
             }
         }
     }
-
     .body {
         display: inline;
     }
-
-    .vintage_container {
-        display: inline;
-        .vintage_img {
-            width:-webkit-fill-available;
-        }
-    }
-
-    .item_box:hover {
-
-        .item_details_box {
-            display: block;
-            z-index: 2;
-            position: absolute;
-        }
-    }
-
-    .mobile_menu {
-        display: flex;
-        position: relative;
-    }
+    display: none;
 }
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*mobilnézet 11.29-31*/
+
+@media (max-width: 600px) {
+    .left_aligned, .right_aligned {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .left_aligned span, .right_aligned span {
+        text-align: center;
+    }
+
