@@ -464,9 +464,37 @@ body {
     /*mobilnézet menü*/
 
     .mobile_menu {
-        width: 35px;
-        height: 27px;
-        display: block;
+        display: flex;
+        position: relative;
+
+        .mobile_menu_element_container {
+            width: 35px;
+            height: 35px;
+        }
+
+        &:hover {
+
+            .mobile_dropdown_container {
+                display: inline-block;
+                position: absolute;
+                background-color: snow;
+                z-index: 10;
+                margin: 0px;
+                text-align: left;
+                padding: 24px;
+                left: 35px;
+                flex: 1;
+                
+
+                .mobile_dropdown_item {
+                    justify-content: flex-start;
+                    list-style: none;
+                    a {                        
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
 
         .mobile_dropdown_container {
             display: none;
@@ -477,25 +505,6 @@ body {
             background-color: snow;
             margin: 6px 0;
         }
-        &:hover {
-
-            .mobile_dropdown_container {
-                display: inline-block;
-                position: relative;
-                z-index: 10;
-                margin: none;
-                text-align: left;
-
-                .mobile_dropdown_item {
-                    width: 200px;
-                    justify-content: flex-start;
-                    background-color: snow;
-                    list-style: none;
-                    a {                        
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
+        
     }
 }
