@@ -2,9 +2,12 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="assets/css/main.css">
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--ettől működik mobilon egyáltalán a nézet normálisan-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--google fonts ikonok-->
 </head>
 
 <body>
@@ -41,6 +44,46 @@
         <h2>Atcsy Web-Gitárbóltya</h2>
         <p>Az innováció a jelszavunk, az Ati gitárok a családunk</p>
         <br>
+        <div class="mobile_menu">
+            <div class="mobile_hamburger_container">
+                <span class="material-icons mobile_hamburger">
+                    menu
+                </span>
+            </div>
+            <ul class="mobile_dropdown_container">
+                <li class="mobile_dropdown_item">
+                    <a href="index.html">Kezdőlap</a>
+                </li>
+                <li class="mobile_dropdown_item">
+                    <a href="guitars.html">Gitárok</a>
+                    <div class="mobile_arrow_container">
+                        <span class="material-icons mobile_arrow">
+                            arrow_forward_ios
+                        </span>
+                        <ul class="mobile_arrow_ul">
+                            <li class="mobile_arrow_li">
+                                <a href="guitars_acoustic.html">Akusztikus Gitárok</a>
+                            </li>
+                            <li class="mobile_arrow_li">
+                                <a href="guitars_electric.html">Elektromos Gitárok</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mobile_dropdown_item">
+                    <a href="pedals.html">Pedálok</a>
+                </li>
+                <li class="mobile_dropdown_item">
+                    <a href="accessories.html">Kiegészítők</a>
+                </li>
+                <li class="mobile_dropdown_item">
+                    <a href="contact.html">Kapcsolat</a>
+                </li>
+                <li class="mobile_dropdown_item">
+                    <a href="about.html">Rólunk</a>
+                </li>
+            </ul>
+        </div>
         <a class="invisible_link" href="news_1.html">
             <div class="newsbutton_container">
                 <img src="assets/images/news_1.jpg" alt="Ez egy menő gitár">
