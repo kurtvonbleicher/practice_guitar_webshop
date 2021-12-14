@@ -394,6 +394,52 @@ body {
 
 .mobile_menu {
     display: none;
+
+    .mobile_hamburger {
+        background-color: snow;
+        border-radius: 2px;
+    }
+
+    &:hover {
+
+        .mobile_dropdown_container {
+            display: inline-block;
+            position: absolute;
+            background-color: snow;
+            z-index: 10;
+            margin: 0px;
+            text-align: left;
+            padding: 12px;
+            left: 35px;
+            flex: 1;
+            font-family: Atifont;                
+
+            .mobile_dropdown_item {
+                justify-content: flex-start;
+                list-style: none;
+                margin: 8px;
+                a {                        
+                    text-decoration: none;
+                    color:rgb(25, 25, 25);
+                }
+            }
+        }
+
+        .mobile_arrow_container {
+                &:hover {                  
+                    .mobile_arrow_ul {
+                        position: relative;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+.mobile_dropdown_container {
+    display: none;
+}
+.mobile_arrow_ul {
+    display: none;
 }
 
 @-webkit-keyframes spin {
@@ -465,45 +511,5 @@ body {
     .mobile_menu {
         display: flex;
         position: relative;
-
-        .mobile_menu_element_container {
-            width: 35px;
-            height: 35px;
-        }
-
-        &:hover {
-
-            .mobile_dropdown_container {
-                display: inline-block;
-                position: absolute;
-                background-color: snow;
-                z-index: 10;
-                margin: 0px;
-                text-align: left;
-                padding: 24px;
-                left: 35px;
-                flex: 1;                
-
-                .mobile_dropdown_item {
-                    justify-content: flex-start;
-                    list-style: none;
-                    a {                        
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-
-        .mobile_dropdown_container {
-            display: none;
-        }
-        
-        .mobile_menu_element {
-            width: 35px;
-            height: 5px;
-            background-color: snow;
-            margin: 6px 0;
-        }
-        
     }
 }
