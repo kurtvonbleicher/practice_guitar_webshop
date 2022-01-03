@@ -242,60 +242,38 @@ body {
     margin: 16px;
 }
 
-/* áru felsorolás*/
+/* webshop elemek */
 
-.item_box {
-    width: 280px;
+.ware_link {
+    display: inline-block;
     height: 280px;
-    float: left;
-    display: block;
+    width: 280px;
+    text-decoration: none;
     margin: 16px;
-    z-index: 1;
-}
-
-.item_details_box {
-    display: none;
-}
-
-.item_image {
-    transition: 0.9s;
-    opacity: 0.7;
+    .ware_container {
+        height: 280px;
+        width: 280px;
+        .ware_img {
+            height: 280px;
     width: 280px;
-    height: 280px;
-}
-
-.item_box:hover > {
-    .item_image {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    .item_details_box {
-        display: inline-block;
-        z-index: 2;
-        position: absolute;
-        text-align: left;
-        padding: 10px;
-        text-decoration: none;
-        font-family: Atifont;
-        font-size: 18px;
-        background-color: snow;
-    }
-}
-
-.item_link {
-    &:visited, &:hover, &:active {
-        color: rgb(25, 25, 25);
+        }
+        .ware_details {
+            text-align: center;
+            color: snow;
+            font-family: Atifont;
+            font-size: 18px;
+        }
     }
 }
 
 /* footer + elektro-akusztikus gitároldal*/
 
-
+/*
 .main {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap; 
 }
+*/
 
 .footer_container {
     width: 100%;
