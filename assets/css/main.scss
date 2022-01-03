@@ -430,6 +430,9 @@ body {
                     .mobile_arrow_ul {
                         position: relative;
                         display: block;
+                        .mobile_arrow_li {
+                            margin: 4px;
+                        }
                     }
                 }
             }
